@@ -1,0 +1,7 @@
+[user]
+	email = dallynmattis@gmail.com
+	name = Whystam
+[core]
+    editor = nvim
+[alias]
+    lg = log --graph --abbrev-commit --date=relative --branches --oneline --all
