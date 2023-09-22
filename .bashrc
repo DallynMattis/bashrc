@@ -90,12 +90,14 @@ fi
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CF'
-alias lg='git lg'
+alias l='ls -lA'
 alias nv='nvim'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+
+
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -116,4 +118,21 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+. "$HOME/.cargo/env"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+#case sensitive off
+
+shopt -s nocaseglob
+
+
+
+#oh-my-posh
+
+eval "$(oh-my-posh init bash)"
+eval "$(oh-my-posh init bash --config ~/.poshthemes/.poshthemes/agnosterplus.omp.json)"
+
 
